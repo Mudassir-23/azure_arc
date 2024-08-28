@@ -557,7 +557,8 @@
         "kind": "StorageV2",
         "properties": {
           "supportsHttpsTrafficOnly": true,
-           "minimumTlsVersion": "TLS1_2"
+          "minimumTlsVersion": "TLS1_2",
+          "allowBlobPublicAccess": false
         }
       },
       {
@@ -663,6 +664,7 @@
           "publicNetworkAccess": "Disabled",
           "supportsHttpsTrafficOnly": true,
            "minimumTlsVersion": "TLS1_2",
+            "allowBlobPublicAccess": false,
            "networkAcls": {
             "defaultAction": "Deny"
            }

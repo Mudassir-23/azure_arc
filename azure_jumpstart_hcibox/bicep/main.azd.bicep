@@ -32,7 +32,7 @@ param logAnalyticsWorkspaceName string = 'HCIBox-Workspace'
 param natDNS string = '8.8.8.8'
 
 @description('Target GitHub account')
-param githubAccount string = 'microsoft'
+param githubAccount string = 'Mudassir-23'
 
 @description('Target GitHub branch')
 param githubBranch string = 'main'

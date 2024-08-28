@@ -81,9 +81,9 @@
     SDNAdminPassword                     = '%staging-password%'                  # Do not change - this value is replaced during Bootstrap with the password supplied in the ARM deployment
 
     # VM Configuration
-    NestedVMMemoryinGB                   = 105GB                                 # This value controls the amount of RAM for each Nested Hyper-V Host (AzSHOST1-2).
-    AzSMGMTMemoryinGB                    = 28GB                                  # This value controls the amount of RAM for the AzSMGMT Nested VM which contains only the Console, Router, Admincenter, and DC VMs.
-    AzSMGMTProcCount                     = 20
+    NestedVMMemoryinGB                   = 300GB                                 # This value controls the amount of RAM for each Nested Hyper-V Host (AzSHOST1-2).
+    AzSMGMTMemoryinGB                    = 56GB                                  # This value controls the amount of RAM for the AzSMGMT Nested VM which contains only the Console, Router, Admincenter, and DC VMs.
+    AzSMGMTProcCount                     = 30
     InternalSwitch                       = "InternalSwitch"                      # Name of internal switch that the HCIBox VMs will use in Single Host mode.
     FabricSwitch                         = "vSwitch-Fabric"
     FabricNIC                            = "FABRIC"
@@ -121,9 +121,9 @@
     ################################################################################################################
 
     # AzSMGMT Management VM's Memory Settings
-    MEM_DC                               = 2GB                                     # Memory provided for the Domain Controller VM
-    MEM_BGP                              = 2GB                                     # Memory provided for the BGP-ToR-Router
-    MEM_WAC                              = 10GB                                    # Memory provided for the Windows Admin Center VM
+    MEM_DC                               = 4GB                                     # Memory provided for the Domain Controller VM
+    MEM_BGP                              = 4GB                                     # Memory provided for the BGP-ToR-Router
+    MEM_WAC                              = 20GB                                    # Memory provided for the Windows Admin Center VM
 
     # Cluster S2D Storage Disk Size (per disk)
     S2D_Disk_Size                        = 170GB                                    # Disk size for each of the 4 dynamic VHD disks attached to the 3 AzSHOST VMs that will be used to create the SDNCLUSTER
