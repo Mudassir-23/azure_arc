@@ -81,7 +81,7 @@
     SDNAdminPassword                     = '%staging-password%'                  # Do not change - this value is replaced during Bootstrap with the password supplied in the ARM deployment
 
     # VM Configuration
-    NestedVMMemoryinGB                   = 300GB                                 # This value controls the amount of RAM for each Nested Hyper-V Host (AzSHOST1-2).
+    NestedVMMemoryinGB                   = 275GB                                 # This value controls the amount of RAM for each Nested Hyper-V Host (AzSHOST1-2).
     AzSMGMTMemoryinGB                    = 56GB                                  # This value controls the amount of RAM for the AzSMGMT Nested VM which contains only the Console, Router, Admincenter, and DC VMs.
     AzSMGMTProcCount                     = 30
     InternalSwitch                       = "InternalSwitch"                      # Name of internal switch that the HCIBox VMs will use in Single Host mode.
